@@ -1,0 +1,10 @@
+links
+
+Building an Arduino on a Breadboard  https://www.arduino.cc/en/main/standalone
+
+10 Ways to Destroy An Arduino  https://www.rugged-circuits.com/10-ways-to-destroy-an-arduino/
+
+
+
+Voltage Regulator Tutorial and Basics  https://www.baldengineer.com/regulator-basics.html
+- 
