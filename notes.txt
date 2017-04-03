@@ -1,10 +1,25 @@
+If we use the ADC:
+  Pin 20 - AVcc - Suppply voltage for the ADC converter. Needs to be connected to power if ADC isn't being used and to power via a low-pass filter if it is (a low pass filter is a circuit that reduces noise from the power source. This example isn't using one) 
+
+
+
 links
 
 Building an Arduino on a Breadboard  https://www.arduino.cc/en/main/standalone
-
 10 Ways to Destroy An Arduino  https://www.rugged-circuits.com/10-ways-to-destroy-an-arduino/
-
-
-
 Voltage Regulator Tutorial and Basics  https://www.baldengineer.com/regulator-basics.html
-- 
+
+
+
+FTDI programmer pin conversion
+
+|-------------+-----------------|
+| FTDI module | ATMETA328-P pin |
+|-------------+-----------------|
+| DTR/RTS     |               1 |
+| RXI/RX      |               2 |
+| TXO/TX      |               3 |
+| 5V          |                 |
+| CTS         |   not connected |
+| GND         |                 |
+|-------------+-----------------|
