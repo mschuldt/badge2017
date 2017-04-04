@@ -420,8 +420,6 @@ F 3 "" H 7000 4750 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	7000 4500 7000 4750
-Wire Wire Line
-	7000 4500 7350 4500
 $Comp
 L Crystal Y?
 U 1 1 58E1C7EA
@@ -444,4 +442,10 @@ F 3 "" H 7750 3650 50  0000 C CNN
 	1    7750 3650
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	7200 4400 7350 4400
+Wire Wire Line
+	7200 4400 7200 4500
+Wire Wire Line
+	7200 4500 7000 4500
 $EndSCHEMATC
