@@ -559,8 +559,8 @@ Wire Wire Line
 	8550 4550 8550 4750
 Wire Wire Line
 	8550 4750 8650 4750
-Text Notes 8250 4350 0    60   ~ 0
-display connector
+Text Notes 8050 4400 0    60   ~ 0
+OLED display connector
 Text GLabel 3550 1500 2    60   Input ~ 0
 p15
 Text GLabel 3550 1650 2    60   Input ~ 0
