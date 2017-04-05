@@ -23,3 +23,19 @@ FTDI programmer pin conversion
 | CTS         |   not connected |
 | GND         |                 |
 |-------------+-----------------|
+
+
+Monochrome OLED Display 128x64 from Adafruit
+|---------+-------------+---------------|
+| display | arduino pin | ATMEGA328 pin |
+|---------+-------------+---------------|
+| GND     | ground      |               |
+| Vin     | 5V          |               |
+| DATA    | digital 9   |            15 |
+| CLK     | digital 10  |            16 |
+| D/C     | digital 11  |            17 |
+| RST     | digital 13  |            19 |
+| CS      | digital 12  |            18 |
+|---------+-------------+---------------|
+|         |             |               |
+

@@ -285,17 +285,17 @@ F 3 "" H 10600 3700 50  0000 C CNN
 	1    10600 3700
 	1    0    0    -1  
 $EndComp
-Text GLabel 3450 1650 2    60   Input ~ 0
+Text GLabel 3550 1350 2    60   Input ~ 0
 p14
 Text GLabel 9000 3550 0    60   Input ~ 0
 p14
-Text GLabel 3500 2250 2    60   Input ~ 0
+Text GLabel 3600 2250 2    60   Input ~ 0
 p9
-Text GLabel 3700 2400 2    60   Input ~ 0
+Text GLabel 3550 2400 2    60   Input ~ 0
 p10
-Text GLabel 6100 3250 0    60   Input ~ 0
+Text GLabel 6400 3100 0    60   Input ~ 0
 p9
-Text GLabel 6150 3450 0    60   Input ~ 0
+Text GLabel 6450 3650 0    60   Input ~ 0
 p10
 Text GLabel 3450 3100 2    60   Input ~ 0
 p1
@@ -332,13 +332,9 @@ F 3 "" H 1100 4150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6300 3100 7050 3100
-Wire Wire Line
 	6850 3200 6850 3100
 Wire Wire Line
 	6850 3500 6850 3650
-Wire Wire Line
-	6300 3650 7100 3650
 Wire Wire Line
 	7350 3100 7700 3100
 Wire Wire Line
@@ -385,17 +381,12 @@ Wire Wire Line
 Wire Wire Line
 	6700 1200 6700 1450
 Connection ~ 6700 1450
-Wire Wire Line
-	6100 3250 6300 3250
-Wire Wire Line
-	6300 3250 6300 3100
 Connection ~ 6850 3100
 Connection ~ 6850 3650
 Wire Wire Line
 	1100 3850 1100 4150
 Wire Wire Line
 	10350 3550 10600 3550
-Connection ~ 7700 3150
 Wire Wire Line
 	10000 1350 10350 1350
 Wire Wire Line
@@ -411,20 +402,11 @@ Wire Wire Line
 Wire Wire Line
 	10600 3550 10600 3700
 Wire Wire Line
-	3250 1650 3450 1650
-Wire Wire Line
-	3250 2250 3500 2250
+	3250 2250 3600 2250
 Wire Wire Line
 	3250 2350 3450 2350
 Wire Wire Line
 	3450 2350 3450 2400
-Wire Wire Line
-	3450 2400 3700 2400
-Wire Wire Line
-	6150 3450 6300 3450
-Connection ~ 6300 3450
-Wire Wire Line
-	6300 3450 6300 3650
 Wire Wire Line
 	3250 3100 3450 3100
 Wire Wire Line
@@ -466,7 +448,7 @@ Wire Wire Line
 Wire Wire Line
 	1200 2250 1350 2250
 Wire Wire Line
-	1350 1950 1200 1950
+	1200 1950 1350 1950
 Connection ~ 1200 1650
 Connection ~ 1200 1950
 Wire Wire Line
@@ -490,12 +472,139 @@ Text Notes 9550 850  0    60   ~ 0
 9v battery connector
 Text Notes 6400 2800 0    60   ~ 0
 16Mhz crystal
-Text Notes 9250 2600 0    60   ~ 0
-Reset switch
 Text Notes 9350 4400 0    60   ~ 0
 FTDI serial programmer connector
 Text Notes 1900 1100 0    60   ~ 0
 ATMEGA328-P
 Text Notes 9250 2750 0    60   ~ 0
 Reset switch
+Wire Wire Line
+	6400 3100 7050 3100
+Wire Wire Line
+	6450 3650 7100 3650
+$Comp
+L GND #PWR?
+U 1 1 58E46BE0
+P 8500 5550
+F 0 "#PWR?" H 8500 5300 50  0001 C CNN
+F 1 "GND" H 8500 5400 50  0000 C CNN
+F 2 "" H 8500 5550 50  0000 C CNN
+F 3 "" H 8500 5550 50  0000 C CNN
+	1    8500 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 5350 8500 5350
+Wire Wire Line
+	8500 5350 8500 5550
+$Comp
+L +5V #PWR?
+U 1 1 58E46C64
+P 8300 5400
+F 0 "#PWR?" H 8300 5250 50  0001 C CNN
+F 1 "+5V" H 8300 5540 50  0000 C CNN
+F 2 "" H 8300 5400 50  0000 C CNN
+F 3 "" H 8300 5400 50  0000 C CNN
+	1    8300 5400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8650 5250 8300 5250
+Wire Wire Line
+	8300 5250 8300 5400
+Text GLabel 8350 4700 0    60   Input ~ 0
+p19
+Text GLabel 8350 4850 0    60   Input ~ 0
+p17
+Text GLabel 8350 5000 0    60   Input ~ 0
+p16
+Text GLabel 8350 5150 0    60   Input ~ 0
+p15
+Wire Wire Line
+	8350 5150 8650 5150
+Wire Wire Line
+	8350 5000 8400 5000
+Wire Wire Line
+	8400 5000 8400 5050
+Wire Wire Line
+	8400 5050 8650 5050
+Wire Wire Line
+	8350 4850 8450 4850
+Wire Wire Line
+	8450 4850 8450 4950
+Wire Wire Line
+	8450 4950 8650 4950
+Wire Wire Line
+	8350 4700 8500 4700
+Wire Wire Line
+	8500 4700 8500 4850
+Wire Wire Line
+	8500 4850 8650 4850
+$Comp
+L CONN_01X07 P?
+U 1 1 58E46FAC
+P 8850 5050
+F 0 "P?" H 8850 5450 50  0000 C CNN
+F 1 "CONN_01X07" V 8950 5050 50  0000 C CNN
+F 2 "" H 8850 5050 50  0000 C CNN
+F 3 "" H 8850 5050 50  0000 C CNN
+	1    8850 5050
+	1    0    0    -1  
+$EndComp
+Text GLabel 8350 4550 0    60   Input ~ 0
+p18
+Wire Wire Line
+	8350 4550 8550 4550
+Wire Wire Line
+	8550 4550 8550 4750
+Wire Wire Line
+	8550 4750 8650 4750
+Text Notes 8050 4400 0    60   ~ 0
+OLED display connector
+Text GLabel 3550 1500 2    60   Input ~ 0
+p15
+Text GLabel 3550 1650 2    60   Input ~ 0
+p16
+Text GLabel 3550 1800 2    60   Input ~ 0
+p17
+Text GLabel 3550 1950 2    60   Input ~ 0
+p18
+Text GLabel 3550 2100 2    60   Input ~ 0
+p19
+Wire Wire Line
+	3250 2150 3400 2150
+Wire Wire Line
+	3400 2150 3400 2100
+Wire Wire Line
+	3400 2100 3550 2100
+Wire Wire Line
+	3250 2050 3500 2050
+Wire Wire Line
+	3500 2050 3500 1950
+Wire Wire Line
+	3500 1950 3550 1950
+Wire Wire Line
+	3250 1950 3450 1950
+Wire Wire Line
+	3450 1950 3450 1800
+Wire Wire Line
+	3450 1800 3550 1800
+Wire Wire Line
+	3250 1850 3400 1850
+Wire Wire Line
+	3400 1850 3400 1650
+Wire Wire Line
+	3400 1650 3550 1650
+Wire Wire Line
+	3250 1750 3350 1750
+Wire Wire Line
+	3350 1750 3350 1500
+Wire Wire Line
+	3350 1500 3550 1500
+Wire Wire Line
+	3250 1650 3250 1350
+Wire Wire Line
+	3250 1350 3550 1350
+Wire Wire Line
+	3450 2400 3550 2400
 $EndSCHEMATC
