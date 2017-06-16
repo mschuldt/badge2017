@@ -1,4 +1,4 @@
-update=Sun 16 Apr 2017 07:39:34 PM PDT
+update=Thu 15 Jun 2017 05:26:40 PM PDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=/home/schuldt/a/projects/defcon-badge/esp_v1/kicad-ESP8266
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -58,3 +58,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
+LibName30=kicad-ESP8266/ESP8266
